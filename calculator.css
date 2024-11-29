@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetic Neue',sans-serif;
+}
+body{
+    background-color: rgb(32, 31, 31);
+    background-image: linear-gradient();
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    background-color: #000;
+    padding: 25px;
+    width: 350px;
+    border-radius: 10px;
+}
+.cal-input{
+    margin-bottom: 20px;
+    padding-left: 5px;
+}
+.cal-input p{
+    width: 100%;
+    font-size: 3.5rem;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    outline: none;
+    word-wrap:break-word;
+    word-break: break-all;
+}
+button{
+    background-color: #333;
+    color: #fff;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 70%;
+    cursor: pointer;
+    height: 65px;
+    width: 65px;
+    margin: 3px;
+}
+button:active,
+button:focus{
+    filter: brightness(120%);
+}
+.cal-key{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-row-gap: 15px;
+    grid-column-gap: 10px;
+}
+.operation{
+    background-color:#ff9501;
+}
+.other-operation{
+    background-color:#a6a6a6;
+}
